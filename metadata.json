@@ -1,0 +1,6 @@
+{
+  "name": "Liverpool Medical Clinic",
+  "description": "Private medical practice located on Rodney Street, Liverpool. Offering unhurried consultant medicine, comprehensive health screening, and precision diagnostics in an architectural clinical sanctuary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

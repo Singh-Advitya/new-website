@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-warm-white: #FAF9F5;
+  --color-ivory: #F5F2EA;
+  --color-stone-surface: #ECE7DC;
+  --color-mineral-border: #E2DDD3;
+  --color-graphite: #1E2024;
+  --color-charcoal: #363A38;
+  --color-sage: #234E39;
+  --color-sage-light: #4B735F;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #1E2024;
+    background-color: #FAF9F5;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom delicate rules and selection */
+::selection {
+  background-color: #234E39;
+  color: #FFFFFF;
+}
+
+/* Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F2EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CDC0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8AC99;
+}
+
+/* Subtle architectural light grid pattern */
+.bg-subtle-light-grid {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(35, 78, 57, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(35, 78, 57, 0.04) 1px, transparent 1px);
+}
